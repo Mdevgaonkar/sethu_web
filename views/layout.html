@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+
+{% include "partials/header.html" %}
+
+<body class="home-page">
+
+    <!-- * Facebook Like button script starts -->
+    <!-- <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script> -->
+    <!-- * Facebook Like button script ends -->
+    
+    <div class="wrapper">
+        <!-- ******HEADER****** --> 
+        {% include "partials/navHeader.html" %}
+        <!--//header-->
+        {% block body %}{% endblock %}
+
+                            <!-- Debug output -->
+                            {% if debug %}
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Debug</h5>
+                                    <pre class="bg-light border p-3"><code>{{debug}}</code></pre>
+                                </div>
+                            </div>
+                            {% endif %}    
+    </div><!--//wrapper-->
+    
+    <!-- ******FOOTER****** --> 
+    {% include "partials/footer.html" %}
+    <!--//footer-->
+    
+    <!-- Login Modal -->
+    {% include "partials/loginModal.html" %}
+    <!--//modal-->
+    
+    <!-- Signup Modal -->
+    {% include "partials/signupModal.html" %}
+    <!--//modal-->
+    
+    <!-- Reset Password Modal -->
+    {% include "partials/resetPassword.html" %}
+    <!--//modal-->
+    
+    <!-- *****CONFIGURE STYLE****** -->
+    <!-- <div class="config-wrapper">
+        <div class="config-wrapper-inner">
+            <a id="config-trigger" class="config-trigger" href="#"><i class="fa fa-cog"></i></a>
+            <div id="config-panel" class="config-panel">
+                <h5>Choose Colour</h5>
+                <ul id="color-options" class="list-unstyled list-inline">
+                    <li class="theme-1 active" ><a data-style="assets/css/styles.css" href="#"></a></li>
+                    <li class="theme-2"><a data-style="assets/css/styles-2.css" href="#"></a></li>
+                    <li class="theme-3"><a data-style="assets/css/styles-3.css" href="#"></a></li>
+                    <li class="theme-4"><a data-style="assets/css/styles-4.css" href="#"></a></li>                   
+                    <li class="theme-5"><a data-style="assets/css/styles-5.css" href="#"></a></li>                     
+                    <li class="theme-6"><a data-style="assets/css/styles-6.css" href="#"></a></li>
+                    <li class="theme-7"><a data-style="assets/css/styles-7.css" href="#"></a></li>
+                    <li class="theme-8"><a data-style="assets/css/styles-8.css" href="#"></a></li>                    
+                    <li class="theme-9"><a data-style="assets/css/styles-9.css" href="#"></a></li>
+                    <li class="theme-10"><a data-style="assets/css/styles-10.css" href="#"></a></li> -->
+                <!-- </ul> -->
+                <!--//color-options-->
+                <!-- <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a> -->
+            <!-- </div> -->
+            <!--//configure-panel-->
+        <!-- </div> -->
+        <!--//config-wrapper-inner-->
+    <!-- </div> -->
+    <!--//config-wrapper-->
+ 
+    <!-- Javascript -->          
+    {% include "partials/scriptsFooter.html" %}
+</body>
+</html> 
+
+
+<!-- Localized -->
