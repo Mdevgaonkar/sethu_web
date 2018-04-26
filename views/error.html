@@ -1,0 +1,15 @@
+{% extends 'layout.html' %} 
+{% block body %}
+
+<!-- ******404 SECATION****** --> 
+<section id="section-500" class="section-500 section">
+        <div class="container text-center">
+            <h2 class="title title-404">500</h2>
+            <p class="intro">Sorry, we messed up.</p>
+            <p class="guide">We will try and fix this asap.</p>
+            <p class="guide">{{ error }}</p>
+            <a class="btn btn-cta-primary btn-back-home" href="/">Back to Home</a>
+        </div><!--//container-->
+    </section><!--//SECTION-404-->  
+
+{% endblock %}
