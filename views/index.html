@@ -13,7 +13,7 @@
         <div class="signup">
             <div class="container text-center">
                 <h3 class="title">Get in Now</h3>
-                <p class="summary">Sign up to know more. No credit card needed.</p>
+                <p class="summary">Sign up to know more.</p>
                 <form class="signup-form">
                     <div class="form-group">
                         <label class="sr-only" for="semail1">Your email</label>
@@ -68,43 +68,24 @@
 </section>
 <!--//promo-->
 
-<!-- ******PRESS****** -->
+<!-- ******Industry partners****** -->
 <div class="press">
     <div class="container text-center">
         <div class="row">
-            <h2 class="title text center"> Industry Partners</h2>
+            <p class="intro text-center"> INDUSTRY PARTNERS </p>
         </div>
         <div class="row">
             <br>
         </div>
         <div class="row">
-            <ul class="list-unstyled">
-                <li class="col-md-offset-1 col-md-2 col-sm-4 col-sm-6 col-xs-6">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/images/press/press-1.png" alt="">
+            <ul class="list-unstyled press-list">
+                {% for industry_partner in data.industry_partners %}
+                <li class="col-md-2 col-sm-4 col-sm-6 col-xs-6 press-item">
+                    <a href="{{ industry_partner.link }}">
+                        <img class="img-fluid" src="{{ industry_partner.thumbnail }}" alt="">
                     </a>
                 </li>
-                <li class="col-md-2 col-sm-4 col-xs-6 col-sm-6">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/images/press/press-2.png" alt="">
-                    </a>
-                </li>
-                <li class="col-md-2 col-sm-4 col-sm-6 col-xs-6 xs-break">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/images/press/press-3.png" alt="">
-                    </a>
-                </li>
-                <li class="col-md-2 col-sm-4 col-sm-6 col-xs-6 sm-break">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/images/press/press-4.png" alt="">
-                    </a>
-                </li>
-                <li class="col-md-2 col-sm-4 col-sm-6 col-xs-6 xs-break">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/images/press/press-5.png" alt="">
-                    </a>
-                </li>
-                <!-- <li class="col-md-2 col-sm-4 col-xs-6"><a href="#"><img class="img-responsive" src="assets/images/press/press-6.png" alt=""></a></li> -->
+                {% endfor %}
             </ul>
         </div>
     </div>
@@ -114,8 +95,8 @@
 <!-- ******WHY****** -->
 <section id="why" class="why section">
     <div class="container">
-        <h2 class="title text-center">Why Use Tempo</h2>
-        <p class="intro text-center">More than 300,000 happy customers are using Tempo around the world</p>
+        <h2 class="title text-center">Why Sethu</h2>
+        <p class="intro text-center"></p>
         <div class="row">
             <div class="benefits col-md-7 col-sm-6 col-xs-12">
 
@@ -267,17 +248,27 @@
 <!-- ******VIDEO****** -->
 <section id="video" class="video section">
     <div class="container">
-        <h2 class="title">Grow your business, start today!</h2>
-        <p class="summary">If you have a promo video, you can put it in this block. Vitae dapibus elit viverra. Praesent ullamcorper dignissim
-            arcu, at vulputate ligula suscipit eu.</p>
-        <div class="control text-center">
-            <button type="button" id="play-trigger" class="play-trigger" data-toggle="modal" data-target="#tour-video">
+        <h1 class="title">Upskill and make your students <br>
+             employable with Sethu</h1>
+        <p class="summary">Launch your community today and see how upskilling your students elevates their hiring propensity.</p>
+
+        <br>
+        <!-- Questions section -->
+        <div class="more-quests text-right">
+                <h4 class="">Questions?</h4>
+                <a class="btn btn-cta btn-cta-secondary" href="/college">Know more</a>
+                <!-- <a class="btn btn-cta btn-cta-secondary" href="/contactUs">Get in touch</a> -->
+            </div>
+        </div>
+        <!-- / Questions section -->
+        <!-- <div class="control text-center"> -->
+            <!-- <button type="button" id="play-trigger" class="play-trigger" data-toggle="modal" data-target="#tour-video">
                 <i class="fa fa-play"></i>
             </button>
-            <p>Watch Video</p>
+            <p>Watch Video</p> -->
 
             <!-- Video Modal -->
-            <div class="modal modal-video" id="tour-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <!-- <div class="modal modal-video" id="tour-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -290,27 +281,27 @@
                                     mozallowfullscreen allowfullscreen></iframe>
                             </div>
                             <!--//video-container-->
-                        </div>
+                        <!-- </div> -->
                         <!--//modal-body-->
-                    </div>
+                    <!-- </div> -->
                     <!--//modal-content-->
-                </div>
+                <!-- </div> -->
                 <!--//modal-dialog-->
-            </div>
+            <!-- </div> -->
             <!--//modal-->
-        </div>
+        <!-- </div> -->
         <!--//control-->
     </div>
 </section>
 <!--//video-->
 
 <!-- ******FAQ****** -->
-<section id="faq" class="faq section has-bg-color">
+<!-- <section id="faq" class="faq section has-bg-color">
     <div class="container">
         <h2 class="title text-center">Frequently Asked Questions</h2>
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="panel">
+        <div class="row"> -->
+            <!-- <div class="col-md-6 col-sm-6 col-xs-12"> -->
+                <!-- <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq1">
@@ -328,10 +319,10 @@
                             synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--//panel-->
 
-                <div class="panel">
+                <!-- <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq2">
@@ -349,10 +340,10 @@
                             synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--//panel-->
 
-                <div class="panel">
+                <!-- <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq3">
@@ -370,10 +361,10 @@
                             synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--//panel-->
 
-                <div class="panel">
+                <!-- <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq4">
@@ -391,11 +382,11 @@
                             synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--//panel-->
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="panel">
+            <!-- </div> -->
+            <!-- <div class="col-md-6 col-sm-6 col-xs-12"> -->
+                <!-- <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq5">
@@ -413,10 +404,10 @@
                             synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--//panel-->
 
-                <div class="panel">
+                <!-- <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq6">
@@ -434,10 +425,10 @@
                             synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--//panel-->
 
-                <div class="panel">
+                <!-- <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq7">
@@ -455,10 +446,10 @@
                             synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--//panel-->
 
-                <div class="panel">
+                <!-- <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-parent="#accordion" data-toggle="collapse" class="panel-toggle" href="#faq8">
@@ -476,18 +467,18 @@
                             synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!--//panel-->
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div> -->
         <!--//row-->
-        <div class="more text-center">
+        <!-- <div class="more text-center">
             <h4 class="title">More questions?</h4>
             <a class="btn btn-cta btn-cta-secondary" href="contact.html">Get in touch</a>
         </div>
-    </div>
+    </div> -->
     <!--//container-->
-</section>
+<!-- </section> -->
 <!--//faq-->
 
 <!-- ******SIGNUP****** -->
