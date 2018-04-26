@@ -1034,6 +1034,8 @@ body.modal-open {
 .press .press-item {
   vertical-align: middle;
   text-align: center;
+  display:inline-block;
+  float:none;
 }
 .press .press-item.last {
   margin-right: 0;
@@ -1192,11 +1194,28 @@ body.modal-open {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+/* ===== More questions section====== */
+.more-quests  {
+  margin-bottom: 15px;
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+}
+
 /* ======= Video Section ======= */
 .video {
   padding: 80px 0;
   position: relative;
-  background: #34495e url('../images/background/video-bg.jpg') no-repeat center center;
+  /* background: #25323f  url('../images/background/video-bg.jpg') no-repeat center center; */
+  background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */
+    url('../images/background/video-bg.jpg'), no-repeat center;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1206,7 +1225,7 @@ body.modal-open {
 }
 .video .title {
   color: #fff;
-  font-size: 28px;
+  font-size: 32px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   max-width: 720px;
   font-weight: bold;
@@ -1214,8 +1233,8 @@ body.modal-open {
 }
 .video .summary {
   color: #fff;
-  font-size: 18px;
-  max-width: 360px;
+  font-size: 22px;
+  max-width: 600px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
 }
