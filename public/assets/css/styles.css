@@ -565,14 +565,14 @@ select {
   margin-bottom: 10px;
 }
 .footer .footer-col.contact p {
-  color: #07090c;
+  color: #d6d6d6;
 }
 .footer .footer-col.contact .fa {
   margin-right: 10px;
-  color: #07090c;
+  color: #d6d6d6;
 }
 .footer .footer-col .title {
-  color: #000000;
+  color: #d6d6d6;
   font-weight: normal;
   font-size: 18px;
 }
@@ -580,10 +580,10 @@ select {
   color: #fff;
 }
 .footer .footer-col a {
-  color: #07090c;
+  color: #d6d6d6;
 }
 .footer .footer-col a:hover {
-  color: #000000;
+  color: #d6d6d6;
 }
 .footer .bottom-bar {
   background: #444;
