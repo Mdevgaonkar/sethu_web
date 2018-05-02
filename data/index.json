@@ -1,0 +1,32 @@
+{
+    "title":"Sethu-Building Congruencies between Industry and Academia",
+    "industry_partners":[
+        {
+            "link":"http://www.yumlane.in/",
+            "thumbnail":"assets/images/press/press-1.png",
+            "image":"http://www.yumlane.in/static/website/images/logo_new.png"
+        },
+        {
+            "link":"http://avishaktisolar.com/",
+            "thumbnail":"assets/images/press/press-2.png",
+            "image":"http://avishaktisolar.com/wp-content/uploads/2018/02/Transparent-Avishakti-Logo-Rectange_1.png"
+        },
+        {
+            "link":"https://www.indiamart.com/janyutechnologies/",
+            "thumbnail":"assets/images/press/press-3.png",
+            "image":"https://tiimg.tistatic.com/images/l/2/logo_95002.jpg"
+        },
+        {
+            "link":"http://manastuspace.com/",
+            "thumbnail":"assets/images/press/press-4.png",
+            "image":"http://manastuspace.com/assets/images/manastu-name-886x12816.png"
+        },
+        {
+            "link":"http://www.smartifyhealth.com/",
+            "thumbnail":"assets/images/press/press-5.png",
+            "image":"http://www.smartifyhealth.com/images/smartify-health-logo.png"
+        }
+
+    ]
+
+}
